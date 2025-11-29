@@ -366,9 +366,9 @@ dependencies = [
 
 [[package]]
 name = "convert_case"
-version = "0.9.0"
+version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "db05ffb6856bf0ecdf6367558a76a0e8a77b1713044eb92845c692100ed50190"
+checksum = "633458d4ef8c78b72454de2d54fd6ab2e60f9e02be22f3c6104cdc8a4e0fceb9"
 dependencies = [
  "unicode-segmentation",
 ]
@@ -1628,7 +1628,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_bus"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "puniyu_logger",
  "puniyu_registry",
@@ -1639,7 +1639,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_common"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "puniyu_system_info",
  "serde",
@@ -1649,7 +1649,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_config"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "notify-debouncer-mini",
  "puniyu_common",
@@ -1660,7 +1660,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_core"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "async-trait",
  "convert_case",
@@ -1689,14 +1689,15 @@ dependencies = [
 
 [[package]]
 name = "puniyu_logger"
-version = "0.6.2"
+version = "0.6.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "347577b30962cff3eb202129753ed617ef53ce1833536d10066850e35c5d0f32"
+checksum = "5651260d72ab30d2ad2bab39ae1e26319238707d026b37ab9c46ef32d2111fb4"
 dependencies = [
  "chrono",
  "chrono-tz",
  "convert_case",
  "owo-colors",
+ "strip-ansi-escapes",
  "tracing",
  "tracing-appender",
  "tracing-log",
@@ -1706,7 +1707,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_macros"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "convert_case",
  "croner",
@@ -1717,12 +1718,13 @@ dependencies = [
 
 [[package]]
 name = "puniyu_plugin"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "actix-web",
  "async-trait",
  "inventory",
  "puniyu_common",
+ "puniyu_config",
  "puniyu_logger",
  "puniyu_macros",
  "puniyu_registry",
@@ -1737,11 +1739,12 @@ version = "0.1.0"
 dependencies = [
  "puniyu_core",
  "puniyu_plugin",
+ "serde",
 ]
 
 [[package]]
 name = "puniyu_registry"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "async-trait",
  "chrono-tz",
@@ -1762,7 +1765,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_server"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "actix-web",
  "futures-util",
@@ -1789,7 +1792,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_types"
-version = "0.5.11"
+version = "0.5.12"
 dependencies = [
  "actix-web",
  "async-trait",
@@ -2241,6 +2244,15 @@ name = "static_assertions"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2eb9349b6444b326872e140eb1cf5e7c522154d69e7a0ffb0fb81c06b37543f"
+
+[[package]]
+name = "strip-ansi-escapes"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2a8f8038e7e7969abb3f1b7c2a811225e9296da208539e0f79c5251d6cac0025"
+dependencies = [
+ "vte",
+]
 
 [[package]]
 name = "strsim"
@@ -2746,6 +2758,15 @@ name = "version_check"
 version = "0.9.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0b928f33d975fc6ad9f86c8f283853ad26bdd5b10b7f1542aa2fa15e2289105a"
+
+[[package]]
+name = "vte"
+version = "0.14.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "231fdcd7ef3037e8330d8e17e61011a2c244126acc0a982f4040ac3f9f0bc077"
+dependencies = [
+ "memchr",
+]
 
 [[package]]
 name = "walkdir"
