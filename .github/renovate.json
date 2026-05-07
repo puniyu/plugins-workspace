@@ -3,12 +3,17 @@
   "extends": [
     "github>puniyu/.github//.github/renovate"
   ],
-    "packageRules": [
+  "packageRules": [
     {
       "groupName": "puniyu",
-      "matchManagers": ["cargo"],
-      "matchPackageNames": ["puniyu_core", "puniyu_plugin"],
-      "schedule": ["at any time"]
+      "matchDatasources": [
+        "crate"
+      ],
+      "matchPackageNames": [
+        "puniyu_plugin"
+      ],
+      "automerge": true,
+      "automergeType": "pr"
     }
   ]
 }

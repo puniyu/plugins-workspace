@@ -1,5 +1,5 @@
 [workspace]
-members = ["packages/*"]
+members = ["puniyu_plugin_basic", "puniyu_plugin_echo"]
 resolver = "2"
 
 [workspace.package]
@@ -12,9 +12,7 @@ edition = "2024"
 rust-version = "1.88.0"
 
 [workspace.dependencies]
-thiserror = { version = "2.0.17" }
-puniyu_core = { version = "0.6.0" }
-puniyu_plugin = { version = "0.6.0" }
+puniyu_plugin = { version = "0.8.3" }
 
 [profile.release]
 lto = "thin"

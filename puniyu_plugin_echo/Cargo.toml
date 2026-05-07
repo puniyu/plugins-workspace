@@ -4,18 +4,13 @@ version = "0.1.0"
 description = "puniyu echo plugin"
 authors.workspace = true
 license.workspace = true
-readme.workspace = true
+readme = "README.md"
 homepage.workspace = true
 repository.workspace = true
 edition.workspace = true
 rust-version.workspace = true
 
-[lib]
-crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-puniyu_plugin = { workspace = true }
+puniyu_plugin.workspace = true
 
-[features]
-default = []
-cdylib = []
