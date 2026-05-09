@@ -1960,9 +1960,9 @@ dependencies = [
 
 [[package]]
 name = "puniyu_plugin"
-version = "0.8.4"
+version = "0.8.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "592c4ee32532802742f296503d9222170ca55f36b6817ff88d72cef1a5374c04"
+checksum = "09a7a0e26df869bcfebc8547c1aa11ad31817778fe31d09155e06cc0a1418e56"
 dependencies = [
  "actix-web",
  "async-trait",
