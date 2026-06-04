@@ -2,6 +2,9 @@
 members = ["puniyu_plugin_basic", "puniyu_plugin_echo"]
 resolver = "2"
 
+[workspace.lints.clippy]
+unwrap_used = "deny"
+
 [workspace.package]
 authors = ["wuliya <3369906077@qq.com>"]
 license = "MIT"
@@ -12,11 +15,15 @@ edition = "2024"
 rust-version = "1.88.0"
 
 [workspace.dependencies]
-puniyu_plugin = { version = "0.8.3" }
+puniyu_plugin = { version = "0.8.8" }
+
 
 [profile.release]
-lto = "thin"
+lto = "fat"
+opt-level = "z"
 incremental = false
 
 [profile.dev]
+lto = false
+opt-level = 1
 incremental = true

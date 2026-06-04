@@ -1,4 +1,4 @@
-name: Contributor
+name: contributor
 on:
   pull_request:
     types:

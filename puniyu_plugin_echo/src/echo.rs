@@ -8,9 +8,9 @@ use puniyu_plugin::prelude::*;
     desc = "要输出的内容",
     required = true
 )]
-async fn echo(ctx: &MessageContext<'_>) -> puniyu_plugin::Result<CommandAction> {
+async fn echo(ctx: &MessageContext<'_>) -> puniyu_plugin::result::Result<CommandAction> {
     if let Some(msg) = ctx.arg("msg").and_then(|v| v.as_str()) {
-        ctx.reply(msg).await?;
-    }   
+        ctx.reply(Message::from(msg)).await?;
+    }
     Ok(().into())
 }

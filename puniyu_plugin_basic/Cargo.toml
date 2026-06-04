@@ -10,7 +10,10 @@ repository.workspace = true
 edition.workspace = true
 rust-version.workspace = true
 
+[lints]
+workspace = true
+
 [dependencies]
 puniyu_plugin.workspace = true
 
-puniyu_system_info = { version = "1.5.5"}
+puniyu_system_info = { version = "1.5.6" }

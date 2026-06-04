@@ -10,7 +10,8 @@ repository.workspace = true
 edition.workspace = true
 rust-version.workspace = true
 
+[lints]
+workspace = true
 
 [dependencies]
 puniyu_plugin.workspace = true
-
