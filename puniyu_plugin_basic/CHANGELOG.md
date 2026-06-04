@@ -1,5 +1,13 @@
 # 变更日志
 
+## [0.8.1](https://github.com/puniyu/plugins-workspace/compare/puniyu_plugin_basic-v0.8.0...puniyu_plugin_basic-v0.8.1)
+
+### ⚙️ 杂项
+
+
+- 同步更新puniyu_core - ([4142a50](https://github.com/puniyu/plugins-workspace/commit/4142a5024ad6d26c876b8cf25f1467a72d169dfd))
+
+
 ## [0.8.0]
 
 ### ⛰️ 新功能
