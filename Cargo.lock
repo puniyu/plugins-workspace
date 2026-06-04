@@ -2136,7 +2136,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_plugin_basic"
-version = "0.8.0"
+version = "0.8.1"
 dependencies = [
  "puniyu_plugin",
  "puniyu_system_info",
@@ -2163,7 +2163,7 @@ dependencies = [
 
 [[package]]
 name = "puniyu_plugin_echo"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "puniyu_plugin",
 ]
