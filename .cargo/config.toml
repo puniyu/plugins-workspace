@@ -1,2 +1,2 @@
 [patch.crates-io]
-puniyu_plugin = { path = "../puniyu/crates/puniyu_plugin" }
+# puniyu_plugin = { path = "../puniyu/crates/puniyu_plugin" }
