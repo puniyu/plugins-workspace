@@ -1,6 +1,6 @@
 [package]
 name = "puniyu_plugin_echo"
-version = "0.1.2"
+version = "0.1.3"
 description = "puniyu echo plugin"
 authors.workspace = true
 license.workspace = true
