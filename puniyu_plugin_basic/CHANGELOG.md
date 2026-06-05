@@ -1,5 +1,13 @@
 # 变更日志
 
+## [0.8.2](https://github.com/puniyu/plugins-workspace/compare/puniyu_plugin_basic-v0.8.1...puniyu_plugin_basic-v0.8.2)
+
+### ⚙️ 杂项
+
+
+- Update Cargo.toml dependencies - ([0000000](https://github.com/puniyu/plugins-workspace/commit/0000000))
+
+
 ## [0.8.1](https://github.com/puniyu/plugins-workspace/compare/puniyu_plugin_basic-v0.8.0...puniyu_plugin_basic-v0.8.1)
 
 ### ⚙️ 杂项
