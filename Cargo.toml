@@ -15,7 +15,7 @@ edition = "2024"
 rust-version = "1.88.0"
 
 [workspace.dependencies]
-puniyu_plugin = { version = "0.8.9" }
+puniyu_plugin = { version = "0.8.11" }
 
 
 [profile.release]
